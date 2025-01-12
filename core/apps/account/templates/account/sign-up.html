@@ -1,0 +1,47 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}
+    Sign-up
+{% endblock title %}
+
+{% block header %}
+	Sign-up
+{% endblock header %}
+
+{% block content %}
+
+	{% include 'utils/form_error_handler.html' %}
+	<style type="text/css">
+		#id_name,
+		#id_surname,
+		#id_username,
+		#id_gender,
+		#id_phone_number,
+		#id_email,
+		#id_password1,
+		#id_password2 {
+			width: 100%;
+		}
+	</style>
+	<form method="POST" id="login-form">
+		{% csrf_token %}
+		{% for field in form %}
+
+		{% if not 'Accept:' in field.label_tag %}
+			<div style="padding-bottom: 15px">
+				<label for="id_username">{{ field.label_tag }}</label>
+				<p>{{ field }}</p>
+			</div>
+		{% else %}
+			<p>{{ field.label_tag }} {{ field }}</p>
+		{% endif %}
+		{% endfor %}
+
+	  <div class="submit-row">
+	    <input type="submit" value="Sign-up">
+	  </div>
+
+	</form>
+
+{% endblock %}

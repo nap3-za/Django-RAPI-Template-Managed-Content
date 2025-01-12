@@ -59,8 +59,11 @@ class Account(AbstractBaseUser, PermissionsMixin):
 				accept=accept,
 				password=password,
 			)
+			user.is_staff = True
+			user.is_admin = True
 			user.is_superuser = True
 			user.save(using=self._db)
+
 			return user
 
 		def all_active(self):

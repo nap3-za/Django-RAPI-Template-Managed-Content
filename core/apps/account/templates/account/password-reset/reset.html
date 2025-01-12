@@ -1,0 +1,27 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}
+    Password reset
+{% endblock title %}
+
+{% block header %}
+	Password reset
+{% endblock header %}
+
+{% block content %}
+
+	{% include 'utils/form_error_handler.html' %}
+	<form method="POST" id="login-form">
+		{% csrf_token %}
+	  <div class="form-row">
+	    <label for="id_username" class="required">Email:</label>
+	    <input type="email" name="email" autofocus="" autocapitalize="none" required="" id="id_username">
+	  </div>
+
+	  <div class="submit-row">
+	    <input type="submit" value="Reset password">
+	  </div>
+	</form>
+
+{% endblock %}

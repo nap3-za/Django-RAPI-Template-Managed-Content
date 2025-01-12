@@ -7,7 +7,6 @@ app_name="account"
 
 
 urlpatterns = [
-	path("delete/", views.AccountDeletionView.as_view(), name="account-delete"),
 ]
 
 account_router = DefaultRouter()

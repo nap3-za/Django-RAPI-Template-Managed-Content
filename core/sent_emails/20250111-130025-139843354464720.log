@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on localhost:8000
+From: webmaster@localhost
+To: admin@user.com
+Date: Sat, 11 Jan 2025 13:00:25 -0000
+Message-ID: <173660042566.13630.16273974070668918323@nfxsys>
+
+
+You're receiving this email because you requested a password reset for your user account at localhost:8000.
+
+Please go to the following page and choose a new password:
+
+http://localhost:8000/password_reset/MQ/cjgusp-d5d07150df4ccb6b071dbc834b7f480e/
+
+Your username, in case you’ve forgotten: user
+
+Thanks for using our site!
+
+The localhost:8000 team
+
+
+
+-------------------------------------------------------------------------------
