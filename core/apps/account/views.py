@@ -9,7 +9,6 @@ from rest_framework import (
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import permissions
-from knox.models import AuthToken
 
 from .serializers import (
 	AccountSerializer,

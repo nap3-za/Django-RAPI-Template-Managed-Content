@@ -1,7 +1,6 @@
 from django.contrib import admin
 
 from .models import Account
-from knox.models import AuthToken
 
 # Register your models here.
 # pg 78 docs
