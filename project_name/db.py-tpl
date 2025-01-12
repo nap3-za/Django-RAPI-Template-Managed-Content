@@ -1,4 +1,4 @@
-from blox.env import config
+from {{ project_name }}.env import config
 import os
 
 
