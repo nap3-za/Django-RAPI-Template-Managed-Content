@@ -24,6 +24,7 @@ drf_api/
 │   	├── misc/			# Mmiscellaneous project features
 │   ├── cdn/       # Static & media storage
 │   ├── media/     # Media files
+│   ├── templates/ # Frontend template files
 │── project_name/
 │   ├── __init__.py-tpl
 │   ├── settings.py-tpl  # Django settings template
